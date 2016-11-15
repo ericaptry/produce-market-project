@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns = "http://www.w3.org/1999/xhtml"
+	  lang = "en" xml:lang = "en">
+	 <head>
+		<meta charset="utf-8">
+		<title>Produce stand - farmers market</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script type = "text/javascript" src="index.js"></script>
+     </head>
+    <body >
+	  <div id="top"> 
+		<h1> Welcome to the Farmer's Market</h1>
+		<h2>  Best Organic Produce Around! </h2>
+	  </div>
+	  <div id="customer"> 
+    <form action = "index.php"
+		  method= "post">
+      <p>
+	 <img src = "images/produce1.png"  
+           alt = "picture of fresh produce" 
+		  width="300" height="200" style="float:right"/>
+	 
+		<label class="info"> Buyer's Name: 
+		<input type = "text"  name = "name" id = "name"  
+                     size = "30" /> </label>
+		<br />
+		<label class="info" > Street Address: 
+		<input type = "text"  name = "street"  id = "street"
+                     size = "30" /> </label>
+		<br />
+		<label class="info" > City:
+		<input type = "text"  name = "city"  id = "city"
+                     size = "30" /> </label>
+		<br />
+		<label class="info" > Province:
+		<input type = "text"  name = "province"  id = "province"
+                     size = "30" /> </label>
+		<br />
+		<label class="info" > PostalCode:
+		<input type = "text"  name = "postalCode" id= "postalCode"
+                     size = "12" /> </label>
+		<p />
+
+     <table>
+
+
+        <tr>
+          <th> Produce Name </th>
+          <th> Price </th>
+          <th> Quantity </th>
+        </tr>
+
+        <tr>
+          <td> Oranges (unit) </td>
+          <td> $1.00 </td>
+          <td> <input type = "text"  id="oranges" name = "oranges"  
+                      size ="2" value="0"/>
+          </td>
+        </tr>
+        <tr>
+          <td> Apples (1kg bag) </td>
+          <td> $2.50 </td>
+          <td> <input type = "text"  id="apples" name = "apples"  
+                      size = "2" value="0"/>
+          </td>
+        </tr> 
+        <tr>
+          <td> Bananas (/kg) </td>
+          <td> $1.25 </td>
+          <td> <input type = "text" id = "bananas" name = "bananas"  
+                      size = "2" value="0"/>
+          </td>
+        </tr>
+        <tr>
+          <td> Blueberry(500g box) </td>
+          <td> $3.25 </td>
+          <td> <input type = "text"  id = "blueberry" name = "blueberry"  
+                      size = "2" value="0"/>
+          </td>
+        </tr> 
+      </table>
+	  <p>
+		<input type="button" value="Total Cost" onclick="computeCost();"/>
+		<input type="text" size="6" id="cost" onfocus="this.blur();"/>
+	  </p>
+	  
+       
+      <h3> Payment Method: </h3>
+      <p>
+        <label class="payment"> <input type = "radio"  name = "payment"  
+                       value = "visa"  checked = "checked" /> 
+                       Visa 
+        </label> 
+        <br />
+        <label class="payment"> <input type = "radio"  name = "payment"  
+                       value = "mc" /> Master Card 
+        </label> 
+        <br />
+        <label class="payment"> <input type = "radio"  name = "payment"  
+                       value = "cheque" /> Cheque 
+        </label> 
+        <br /> 
+      </p>
+	  
+      <p>
+        <input type = "submit"  value = "Submit Order" />
+        <input type = "reset"  value = "Clear Order Form" />
+      </p>
+    </form>
+									
+    <script type = "text/javascript" src="event.js"></script>
+	</div>
+  </body>
+</html>

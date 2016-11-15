@@ -1,0 +1,77 @@
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: #6E8B7D;
+    font-family: arial;
+    margin: 0;
+}
+
+
+#top {
+    margin: 0;
+    background-color:#696769;
+    color:white;
+    text-align:center;
+    font-family:arial;
+    
+}
+
+#customer {
+    width:1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 160px;
+    margin-right: 160px;
+    
+}
+
+p  {
+    margin-left:20px;
+    
+}	
+
+label {
+    font-weight:bold;
+    font-family:arial;
+    
+}
+
+table, th, td
+{
+	border: 1px solid black;
+	font-family:arial;
+	color:white;
+}
+
+th {
+    background-color: #696769;
+    color:white;
+    font-family:arial;
+    
+}
+
+td {
+    padding:5px;
+    
+}
+
+.info {
+    color:white;
+    font-style:italic;
+    font-family:arial;
+    
+}
+
+.payment {
+    color:#D0021B;
+    font-family:arial;
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: arial;
+    font-style: normal;
+}
+
+#summary{
+    padding: 50px;
+}
